@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Conf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="container navbar">
+        <div class="Ticket_logo">
+          <img src="./img/logo-mark.svg" alt="" width="25" height="22" />
+          <h2>Coding Conf</h2>
+        </div>
+      </div>
+      <main>
+        <section class="section">
+          <div class="container">
+            <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p class="p">
+              ecure your spot at next year’s biggest coding conference.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <form class="Ticket_input" id="ticketForm">
+            <div class="form-group1">
+              <label class="Ticket_label" for="avatar">Upload Avatar</label>
+              <input
+                class="input-file"
+                type="file"
+                name="Upload Avatar"
+                id="avatar"
+              />
+              <span class="placeholder">Drag and drop or click to upload</span>
+            </div>
+
+            <div class="form-group">
+              <label class="Ticket_label" for="full-name">Full name</label>
+              <input
+                class="input"
+                type="text"
+                name="Full name"
+                id="full-name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="Ticket_label" for="email">Email Address</label>
+              <input
+                class="input"
+                type="email"
+                name="Email Address"
+                id="email"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="Ticket_label" for="github-username"
+                >GitHub Username</label
+              >
+              <input
+                class="input"
+                type="text"
+                name="GitHub Username"
+                id="github-username"
+                placeholder="@username"
+              />
+            </div>
+
+            <button class="Ticket_input_button" type="button" id="submitBtn">
+              Generate My Ticket
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
