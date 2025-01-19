@@ -43,12 +43,14 @@
   box-sizing: border-box;
 }
 body {
+  padding: 0 15px;
   font-family: "Inconsolata", sans-serif;
   background-image: url(../img/background-desktop.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #ffffff;
+  height: 100vh;
 }
 .body {
   background-image: url(../img/Lines.svg);
@@ -226,4 +228,91 @@ h1 {
 .input-file:focus + .placeholder {
   border-color: #0056b3;
   outline: none;
+}
+
+.ticket {
+  width: 300px;
+  background: linear-gradient(145deg, #2e2e42, #191927);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: left;
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ticket-footer {
+  writing-mode: vertical-rl;
+  margin-left: -578px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(145deg, #2e2e42, #191927);
+  border-radius: 15px;
+  padding: 20px;
+
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.event-info h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.event-info p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.ticket-body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ff5e57;
+}
+
+.profile-info h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.ticket-footer {
+  padding-top: 10px;
+  color: #ff5e57;
+}
+
+.card {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
